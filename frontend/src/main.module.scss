@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: rgb(170, 181, 175);
+   
+    .container{
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }   
+}
+
+.header{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 10px;
+
+
+    .title{
+        font-size: 40px;
+        color: rgb(45, 43, 43);
+        font-weight: 600;
+        text-transform: uppercase;
+
+    }
+
+    
+}
+
+.new_post{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+

@@ -2,3 +2,8 @@ env/
 __pycache__/
 .env
 *.db
+
+node_modules
+dist
+dist-ssr
+*.local
