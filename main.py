@@ -12,17 +12,19 @@ app = FastAPI()
 app.include_router(post.router)
 
 
-origins = ["http://localhost:3000"]
+origins = ["http://localhost:5173"]
 
 
 Base.metadata.create_all(engine)
+
+
 
 app.mount("/images", StaticFiles(directory="images"), name="images")
 
 
 app.add_middleware(
     CORSMiddleware,
-    allow_hosts=origins,
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
